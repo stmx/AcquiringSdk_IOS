@@ -345,3 +345,11 @@ public final class AcquiringSdk: NSObject {
     }
     
 } // AcquiringSdk
+
+
+extension Bundle {
+    static var tinkoffASDKCore: Bundle {
+        let path = Bundle.main.path(forResource: "TinkoffASDKCore", ofType: "bundle")!
+        return Bundle(path: path) ?? Bundle.main
+    }
+}

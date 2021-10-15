@@ -92,14 +92,14 @@ class CardListPresenter: NSObject {
     private func setupCardListCollectionView(_ collectionView: UICollectionView) {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "defaultCell")
 
-        collectionView.register(UINib(nibName: "PaymentCardCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "PaymentCardCollectionViewCell")
-        collectionView.register(UINib(nibName: "CardListLoadingCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "CardListLoadingCollectionViewCell")
-        collectionView.register(UINib(nibName: "CardListStatusCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "CardListStatusCollectionViewCell")
-        collectionView.register(UINib(nibName: "PaymentCardInputRequisitesCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "PaymentCardInputRequisitesCollectionViewCell")
-        collectionView.register(UINib(nibName: "SBPCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "SBPCollectionViewCell")
+        collectionView.register(UINib(nibName: "PaymentCardCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "PaymentCardCollectionViewCell")
+        collectionView.register(UINib(nibName: "CardListLoadingCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "CardListLoadingCollectionViewCell")
+        collectionView.register(UINib(nibName: "CardListStatusCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "CardListStatusCollectionViewCell")
+        collectionView.register(UINib(nibName: "PaymentCardInputRequisitesCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "PaymentCardInputRequisitesCollectionViewCell")
+        collectionView.register(UINib(nibName: "SBPCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "SBPCollectionViewCell")
 
-        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle(for: type(of: self))), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "UICollectionReusableViewEmpty")
-        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle(for: type(of: self))), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionReusableViewEmpty")
+        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle.tinkoffASDKUI), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "UICollectionReusableViewEmpty")
+        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle.tinkoffASDKUI), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionReusableViewEmpty")
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -108,11 +108,11 @@ class CardListPresenter: NSObject {
     private func setupPageStatusCollectionView(_ collectionView: UICollectionView) {
         collectionView.register(UICollectionViewCell.self, forCellWithReuseIdentifier: "defaultCell")
 
-        collectionView.register(UINib(nibName: "PageStatusCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "PageStatusCollectionViewCell")
-        collectionView.register(UINib(nibName: "PageStatusListCollectionViewCell", bundle: Bundle(for: type(of: self))), forCellWithReuseIdentifier: "PageStatusListCollectionViewCell")
+        collectionView.register(UINib(nibName: "PageStatusCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "PageStatusCollectionViewCell")
+        collectionView.register(UINib(nibName: "PageStatusListCollectionViewCell", bundle: Bundle.tinkoffASDKUI), forCellWithReuseIdentifier: "PageStatusListCollectionViewCell")
 
-        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle(for: type(of: self))), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "UICollectionReusableViewEmpty")
-        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle(for: type(of: self))), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionReusableViewEmpty")
+        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle.tinkoffASDKUI), forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: "UICollectionReusableViewEmpty")
+        collectionView.register(UINib(nibName: "UICollectionReusableViewEmpty", bundle: Bundle.tinkoffASDKUI), forSupplementaryViewOfKind: UICollectionView.elementKindSectionFooter, withReuseIdentifier: "UICollectionReusableViewEmpty")
 
         collectionView.delegate = self
         collectionView.dataSource = self
@@ -239,11 +239,11 @@ extension CardListPresenter: UICollectionViewDelegate, UICollectionViewDelegateF
                 switch cellInfo.type {
                 case .card:
                     if indexPath.row == 0, let cellCardList = collectionView.dequeueReusableCell(withReuseIdentifier: "PageStatusListCollectionViewCell", for: indexPath) as? PageStatusListCollectionViewCell {
-                        cellCardList.setIconList(UIImage(named: "pageList", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                        cellCardList.setIconList(UIImage(named: "pageList", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                         if selectedCardCellIndex == indexPath.row {
-                            cellCardList.setIcon(UIImage(named: "pageDotActive", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                            cellCardList.setIcon(UIImage(named: "pageDotActive", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                         } else {
-                            cellCardList.setIcon(UIImage(named: "pageDot", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                            cellCardList.setIcon(UIImage(named: "pageDot", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                         }
 
                         cellCardList.onTouchList = { [weak self] in
@@ -257,19 +257,19 @@ extension CardListPresenter: UICollectionViewDelegate, UICollectionViewDelegateF
                         return cellCardList
                     } else {
                         if selectedCardCellIndex == indexPath.row {
-                            cell.setIcon(UIImage(named: "pageDotActive", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                            cell.setIcon(UIImage(named: "pageDotActive", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                         } else {
-                            cell.setIcon(UIImage(named: "pageDot", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                            cell.setIcon(UIImage(named: "pageDot", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                         }
                     }
                 case .requisites:
                     if selectedCardCellIndex == indexPath.row {
-                        cell.setIcon(UIImage(named: "pageAddCardActive", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                        cell.setIcon(UIImage(named: "pageAddCardActive", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                     } else {
-                        cell.setIcon(UIImage(named: "pageAddCard", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                        cell.setIcon(UIImage(named: "pageAddCard", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                     }
                 case .sbp:
-                    cell.setIcon(UIImage(named: "pageQR", in: Bundle(for: type(of: self)), compatibleWith: nil))
+                    cell.setIcon(UIImage(named: "pageQR", in: Bundle.tinkoffASDKUI, compatibleWith: nil))
                 }
 
                 cell.onTouch = { [weak self] in
