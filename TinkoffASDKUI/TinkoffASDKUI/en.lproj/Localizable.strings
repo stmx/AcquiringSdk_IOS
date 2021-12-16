@@ -17,60 +17,60 @@
  *  limitations under the License.
  */
 
-"TinkoffAcquiring.unknown.response.status" = "Unknown Status";
-"TinkoffAcquiring.unknown.error.status" = "Unknown Error.\nPlease try again later.";
+"TinkoffAcquiring.unknown.response.status" = "Неизвестный статус платежа";
+"TinkoffAcquiring.unknown.error.status" = "Неизвесная ошибка.\nПопробуйте поворить операцию.";
 //
-"TinkoffAcquiring.alert.title.error" = "Error";
-"TinkoffAcquiring.alert.title.cardSuccessAdded" = "Success";
-"TinkoffAcquiring.alert.title.addingCard" = "Adding card";
-"TinkoffAcquiring.alert.message.addingCardCancel" = "The operation was cancelled";
+"TinkoffAcquiring.alert.title.error" = "Ошибка";
+"TinkoffAcquiring.alert.title.cardSuccessAdded" = "Карта добавлена";
+"TinkoffAcquiring.alert.title.addingCard" = "Добавление карты";
+"TinkoffAcquiring.alert.message.addingCardCancel" = "Операция отменена";
 //
-"TinkoffAcquiring.button.update" = "Update";
-"TinkoffAcquiring.button.cancel" = "Cancel";
-"TinkoffAcquiring.button.close" = "Close";
-"TinkoffAcquiring.button.ok" = "OK";
-"TinkoffAcquiring.button.payByCard" = "Pay by card";
-"TinkoffAcquiring.button.payBy" = "Pay by ";
-"TinkoffAcquiring.button.qrcode" = "QR-code";
-"TinkoffAcquiring.button.addCard" = "Add Card";
-"TinkoffAcquiring.button.confirm" = "Confirm";
-"TinkoffAcquiring.button.delete" = "Delete";
+"TinkoffAcquiring.button.update" = "Обновить";
+"TinkoffAcquiring.button.cancel" = "Отмена";
+"TinkoffAcquiring.button.close" = "Закрыть";
+"TinkoffAcquiring.button.ok" = "Ok";
+"TinkoffAcquiring.button.payByCard" = "Оплатить по карте";
+"TinkoffAcquiring.button.payBy" = "Оплатить через ";
+"TinkoffAcquiring.button.qrcode" = "QR-код";
+"TinkoffAcquiring.button.addCard" = "Добавить";
+"TinkoffAcquiring.button.confirm" = "Подтвердить";
+"TinkoffAcquiring.button.delete" = "Удалить";
 //
-"TinkoffAcquiring.text.status.waitingInitPayment" = "Waiting payment initializer";
-"TinkoffAcquiring.text.status.waitingPayment" = "Waiting for payment receipt";
-"TinkoffAcquiring.text.status.cardListEmpty" = "Card List Empty";
-"TinkoffAcquiring.text.status.loading" = "Loading";
-"TinkoffAcquiring.text.status.error.email" = "Incorrect email";
-"TinkoffAcquiring.text.status.error.emailEmpty" = "Please enter email";
-"TinkoffAcquiring.text.addcard" = "Add card";
-"TinkoffAcquiring.text.addNewCard" = "Add new card";
-"TinkoffAcquiring.text.loopConfirmation" = "To confirm the operation, we debited and refunded a small amount (up to 1,99 rubles)\nPlease specify it.";
-"TinkoffAcquiring.text.or" = "or";
+"TinkoffAcquiring.text.status.waitingInitPayment" = "Инициалихация платежа";
+"TinkoffAcquiring.text.status.waitingPayment" = "Ожидание оплаты";
+"TinkoffAcquiring.text.status.cardListEmpty" = "Сохраненных карт нет";
+"TinkoffAcquiring.text.status.loading" = "Загрузка ...";
+"TinkoffAcquiring.text.status.error.email" = "Неверный формат электронной почты";
+"TinkoffAcquiring.text.status.error.emailEmpty" = "Введите email";
+"TinkoffAcquiring.text.addcard" = "Добавить карту";
+"TinkoffAcquiring.text.addNewCard" = "Добавить новую карту";
+"TinkoffAcquiring.text.loopConfirmation" = "Для подтверждения операции мы списали и вернули небольшую сумму (до 1,99 руб.)\nПожалуйста, укажите ее с точностью до копеек.";
+"TinkoffAcquiring.text.or" = "или";
 //
-"TinkoffAcquiring.hint.loopAmount" = "all amount, down to the penny";
+"TinkoffAcquiring.hint.loopAmount" = "сумма с точностью до копеек";
 //
-"TinkoffAcquiring.error.loopAmount" = "please, enter the amount";
+"TinkoffAcquiring.error.loopAmount" = "укажите сумму с точностью до копеек";
 //
-"TinkoffAcquiring.placeholder.cardNumber" = "Card number";
-"TinkoffAcquiring.placeholder.sendReceiptToEmail" = "Send receipt to email";
-"TinkoffAcquiring.placeholder.loopAmount" = "for example 0,89";
+"TinkoffAcquiring.placeholder.cardNumber" = "Номер карты";
+"TinkoffAcquiring.placeholder.sendReceiptToEmail" = "Отправить квитанцию по адресу";
+"TinkoffAcquiring.placeholder.loopAmount" = "Например 0,89";
 //
-"TinkoffAcquiring.view.title.pay" = "Payment";
-"TinkoffAcquiring.view.title.savedCards" = "Saved cards";
-"TinkoffAcquiring.view.title.payQRCode" = "Payment by QR-code";
-"TinkoffAcquiring.view.title.confimration" = "Confirmation";
+"TinkoffAcquiring.view.title.pay" = "Оплата";
+"TinkoffAcquiring.view.title.savedCards" = "Сохраненные карты";
+"TinkoffAcquiring.view.title.payQRCode" = "Оплата по QR-коду";
+"TinkoffAcquiring.view.title.confimration" = "Подтверждение";
 
 // SBP Banks List
-"SBP.BanksList.Header.Title" = "Choose bank app";
-"SBP.BanksList.Header.Subtitle" = "Chosen app will be opened in order to confirm the purchase";
-"SBP.BanksList.Button.Title" = "Continue";
+"SBP.BanksList.Header.Title" = "Выберите банк";
+"SBP.BanksList.Header.Subtitle" = "Мы откроем приложение этого банка для подтверждения оплаты";
+"SBP.BanksList.Button.Title" = "Продолжить";
 
-"SBP.EmptyBanks.Title" = "No bank app is installed on your device";
-"SBP.EmptyBanks.Description" = "Install bank app that supports FPS to confirm the purchase";
-"SBP.EmptyBanks.ConfirmationButton.Title" = "OK";
-"SBP.EmptyBanks.InformationButton.Title" = "Check details on website";
+"SBP.EmptyBanks.Title" = "Не найдено ни одного банковского приложения";
+"SBP.EmptyBanks.Description" = "Для оплаты через СБП необходимо иметь установленными банковские приложения";
+"SBP.EmptyBanks.ConfirmationButton.Title" = "Понятно";
+"SBP.EmptyBanks.InformationButton.Title" = "Информация на сайте СБП";
 
-"SBP.Error.Title" = "Error occured during transaction";
-"SBP.Error.Description" = "Try again";
+"SBP.Error.Title" = "Не удалось выполнить оплату через СБП";
+"SBP.Error.Description" = "Попробуйте еще раз";
 
-"SBP.OpenApplication.Error" = "Failed to open application";
+"SBP.OpenApplication.Error" = "Не удалось открыть приложение";
